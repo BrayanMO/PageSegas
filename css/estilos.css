@@ -23,6 +23,7 @@ html{
 /*---------------HEADER-----------*/
 header{
 	background: url('../img/bg.png');
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	max-height: 600px;
@@ -151,7 +152,8 @@ header .contenedor-texto .texto .profesion{
 .main .trabajos .contenedor-trabajos{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .main .trabajos .contenedor-trabajos .trabajo{
@@ -170,7 +172,6 @@ header .contenedor-texto .texto .profesion{
 	width: 100%;
 	vertical-align: top;
 	border-radius: 3px; 
-	transition: all .3s ease-in-out;
 	
 }
 
@@ -178,7 +179,6 @@ header .contenedor-texto .texto .profesion{
 	border-radius: 40px;
 	width: 100%;
 	border: #ffffff 0.1px transparent;
-	/*transform: rotate(360deg);*/
 	padding: 15px;
 }
 
@@ -201,7 +201,7 @@ header .contenedor-texto .texto .profesion{
 /*----------DEMO STYLE-----------*/
 .main .contenedor .swiper-container {
 	width: 100%;
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-bottom: 70px;
 	margin-bottom: 30px;
   }
@@ -216,13 +216,73 @@ header .contenedor-texto .texto .profesion{
 
 .main .contenedor .title{
 	font-size: 34px;
+	font-weight: 34px; 
+	margin-top: 50px;
+	margin-bottom: 50px; 
 	font-weight: 300; 
 	color: #1b1879ad;
 	text-align: center;
-	padding: 15px 0 20px 0;
-	margin:20px 0 20px 0 ;
 }
   
+/*-----------Team Work -----------*/
+.main .equipo {
+	background: #f2f2f2;
+	padding: 60px 0;
+	text-align: center; 
+	
+}
+.main .equipo .contenedor{
+	overflow: hidden;
+}
+
+.main .equipo .contenedor .titulo{
+	font-size: 34px;
+	font-weight: 34px; 
+	margin-bottom: 40px; 
+	font-weight: 300; 
+	color: #1b1879ad;
+	text-align: center;
+}
+.main .equipo .perfil{
+	justify-content: space-between;
+}
+.main .equipo .perfil img{
+	border-radius: 50%;
+}
+
+.main .equipo .perfil1 img{
+	float: left;
+}
+
+.main .equipo .perfil1 .descrip{
+	float: right;
+	width: 30%;
+}
+
+/* .main .equipo .perfil1 .descrip p{
+	width: 60%;
+	float: right;
+	color: #5a5a5a;
+	text-align:justify;
+} */
+
+.main .equipo .perfil2 img{
+	float: right;
+}
+
+.main .equipo .perfil2 .descrip{
+	float: left;	
+	width: 30%;
+}
+/* .main .equipo .perfil2 .descrip p{
+	width: 60%;
+	float: left;
+	color: #5a5a5a;
+	text-align:justify;
+} */
+
+
+
 /*-----------FOOTER---------*/
 
 footer .redes-sociales{
@@ -283,6 +343,12 @@ footer .redes-sociales .facebook:hover { background: #3b5998; }
 }
 
 @media screen and (max-width: 500px){
+	header {
+		background: url('../img/bg_mov.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 	header .contenedor-texto .texto .nombre{
 		font-size: 35px;
 	}
