@@ -227,7 +227,7 @@ header .contenedor-texto .texto .profesion{
 /*-----------Team Work -----------*/
 .main .equipo {
 	background: #f2f2f2;
-	padding: 60px 0;
+	padding: 10px 0 40px 0;
 	text-align: center; 
 	
 }
@@ -243,43 +243,46 @@ header .contenedor-texto .texto .profesion{
 	color: #1b1879ad;
 	text-align: center;
 }
-.main .equipo .perfil{
-	justify-content: space-between;
-}
-.main .equipo .perfil img{
+
+.main .equipo .perfil  img{
 	border-radius: 50%;
 }
 
-.main .equipo .perfil1 img{
-	float: left;
+.main .equipo .perfil .perfil1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 20px;
 }
 
-.main .equipo .perfil1 .descrip{
-	float: right;
-	width: 30%;
+.main .equipo .perfil .perfil1 .photo{
+	width: 40%;
 }
-
-/* .main .equipo .perfil1 .descrip p{
+.main .equipo .perfil .perfil1 .descrip{
 	width: 60%;
-	float: right;
-	color: #5a5a5a;
-	text-align:justify;
-} */
-
-.main .equipo .perfil2 img{
-	float: right;
+	text-align: justify;
+	padding-top: 20px;
 }
 
-.main .equipo .perfil2 .descrip{
-	float: left;	
-	width: 30%;
+.main .equipo .perfil .perfil2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 20px;
 }
-/* .main .equipo .perfil2 .descrip p{
+
+.main .equipo .perfil .perfil2 .photo{
+	width: 40%;
+
+}
+.main .equipo .perfil .perfil2 .descrip{
 	width: 60%;
-	float: left;
-	color: #5a5a5a;
-	text-align:justify;
-} */
+	text-align: justify;
+	padding-top: 20px;
+}
+
 
 
 
@@ -349,11 +352,47 @@ footer .redes-sociales .facebook:hover { background: #3b5998; }
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+	header .menu a{
+		font-size: 16px;
+		padding-bottom: 18px;
+	}
 	header .contenedor-texto .texto .nombre{
 		font-size: 35px;
 	}
 	header .contenedor-texto .texto .profesion{
 		font-size: 18px;
+	}
+	
+	.main .equipo .perfil .perfil1{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.main .equipo .perfil .perfil1 .photo{
+		width: 100%;
+	}
+	.main .equipo .perfil .perfil1 .descrip{
+		width: 90%;
+		text-align: center;
+		
+	}
+
+	.main .equipo .perfil .perfil2{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+	.main .equipo .perfil .perfil2 .photo{
+		width: 100%;
+	}
+	.main .equipo .perfil .perfil2 .descrip{
+		width: 90%;
+		text-align: center;
+		
 	}
 
 	footer .redes-sociales .contenedor{
