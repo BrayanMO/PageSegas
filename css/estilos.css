@@ -299,7 +299,7 @@ footer .redes-sociales .contenedor{
 	justify-content: space-between;
 }
 
-footer .redes-sociales .facebook{
+footer .redes-sociales .contenedor .facebook{
 	color: #fff;
 	text-align: center;
 	width: 100px;
@@ -398,5 +398,13 @@ footer .redes-sociales .facebook:hover { background: #3b5998; }
 	footer .redes-sociales .contenedor{
 		flex-wrap: 	wrap;
 		padding: 20px;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	footer .redes-sociales .contenedor .faa{
+		margin-left: 30%;
+		margin-right: 30%;
+		
 	}
 }
